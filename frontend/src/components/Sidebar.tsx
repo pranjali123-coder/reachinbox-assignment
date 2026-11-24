@@ -1,0 +1,3 @@
+export function Sidebar({ tab, setTab }: { tab: string; setTab: (v: string) => void }) {
+  return <aside className="hidden w-60 shrink-0 border-r bg-white p-5 md:block"><div className="mb-10 text-2xl font-bold tracking-tight">ReachInbox</div><nav className="space-y-2"><button onClick={() => setTab('scheduled')} className={`w-full rounded-xl px-4 py-3 text-left ${tab==='scheduled'?'bg-slate-900 text-white':'hover:bg-slate-100'}`}>Scheduled Emails</button><button onClick={() => setTab('sent')} className={`w-full rounded-xl px-4 py-3 text-left ${tab==='sent'?'bg-slate-900 text-white':'hover:bg-slate-100'}`}>Sent Emails</button></nav></aside>
+}
